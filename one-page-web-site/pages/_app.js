@@ -1,4 +1,4 @@
-import Menu from "@/components/menubar"
+import Menu from "@/components/header"
 import "../styles/global.css"
 import "../styles/styles.less"
 
