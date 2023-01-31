@@ -18,7 +18,16 @@ module.exports = {
     colors: {
       'primary-color': '#00B761'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'primary-font': ['Montserrat'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond']
+      },
+    }
+    , fontWeight: {
+      bold: '700',
+    }
 
   },
   plugins: [],

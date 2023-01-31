@@ -1,10 +1,14 @@
+
 import Menu from "@/components/header"
 import "../styles/global.css"
-import "../styles/styles.less"
+import SalesPage from "./sales"
+import Home from "./index"
 
 export default function App({ Component, pageProps }) {
   return <>
     <Menu />
-    <Component {...pageProps} />
+    <Home />
+    <SalesPage />
+    {/* <Component {...pageProps} /> */}
   </>
 }
