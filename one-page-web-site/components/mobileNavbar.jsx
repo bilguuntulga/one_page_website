@@ -32,14 +32,13 @@ function MobileNavbar() {
         <div className="menu__text">
           <a href="#sales">Борлуулах </a>
           <br />
-          <a href="#">Автоматжуулах</a>
+          <a href="#automation">Автоматжуулах</a>
           <br />
-          <a href="#">Зөвлөгөө авах</a>
+          <a href="#advice">Зөвлөгөө авах</a>
           <br />
-          <a href="#">Холбоо барих</a>
+          <a href="#contact">Холбоо барих</a>
         </div>
       </div>
-      sdaf
     </div>
   );
 }

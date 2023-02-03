@@ -5,9 +5,9 @@ function Navbar() {
     <div>
       <div className="text-[white] justify-end flex gap-5 place-items-center text-[16px] font-primary-font">
         <a href="#sales">Борлуулах </a>
-        <a href="#">Автоматжуулах</a>
-        <a href="#">Зөвлөгөө авах</a>
-        <a href="#">Холбоо барих</a>
+        <a href="#automation">Автоматжуулах</a>
+        <a href="#advice">Зөвлөгөө авах</a>
+        <a href="#contact">Холбоо барих</a>
         <button className="bg-[#7647EA] text-[white] text-[13px] i rounded-[32px] px-3 py-2  grid place-items-center font-primary-font">
           ДЭЛГҮҮР НЭЭХ
         </button>

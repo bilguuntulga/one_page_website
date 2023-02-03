@@ -3,6 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Main from "/public/images/main.png"
 import Scroll from "/public/images/scroll.png"
+import Fade from 'react-reveal/Fade';
+import Bounce  from 'react-reveal/Bounce';
+
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,26 +36,30 @@ export default function Home() {
       </Head>
       <main>
         <div className="h-full  bg-[#1E1E1E] lg:flex grid m-auto relative mt-[68px] ">
-          <div className="w-[50%] grid place-items-center mb-20 ">
-            <div>
-              <div className="text-[64px] text-[700] text-[white] leading-[70px] font-primary-font">
-                <b>
-                  LAUNCH YOUR <br /> ONLINE BUSINESS
-                </b>
+          <Fade left>
+            <div className="w-[50%] grid place-items-center mb-20 ">
+              <div>
+                <div className="text-[64px] text-[700] text-[white] leading-[70px] font-primary-font">
+                  <b>
+                    LAUNCH YOUR <br /> ONLINE BUSINESS
+                  </b>
+                </div>
+                <div className="text-[24px] text-[white] font-primary-font">
+                  You can manage your online business by yourself
+                </div>
+                <p className="text-[#7647EA] text-[48px] text-bold font-primary-font">
+                  <b>
+                    UNDER 1 MINUTE
+                  </b>
+                </p>
               </div>
-              <div className="text-[24px] text-[white] font-primary-font">
-                You can manage your online business by yourself
-              </div>
-              <p className="text-[#7647EA] text-[48px] text-bold font-primary-font">
-                <b>
-                  UNDER 1 MINUTE
-                </b>
-              </p>
             </div>
-          </div>
-          <div className="w-[50%]">
-            <Image src={Main} className="w-[769px] h-[833px] ml-11 mt-[115px]" alt="" />
-          </div>
+          </Fade>
+          <Bounce right>
+            <div className="w-[50%]">
+              <Image src={Main} className="w-[769px] h-[763px] ml-11 mt-[290px]" alt="" />
+            </div>
+          </Bounce>
           {isScrolled ?
             <div className="scroll__button font-primary-font">
               <p className="mb-2">SCROLL DOWN</p>
